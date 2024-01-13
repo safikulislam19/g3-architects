@@ -15,7 +15,7 @@
 /* header style */
 header{
     background-color: rgba(225,144,14,0.10);
-    padding: 50px;
+    padding: 50px 40px;
 }
 /* Navbar Style */
 nav{
@@ -62,6 +62,24 @@ h1{
     line-height: 26px;
     margin: 10px auto; 
 }
-/* .banner-photo{
-   
-} */
+.banner img{
+   width: 100%;
+   margin-top: 25px;
+}
+/* Responsive @media quary */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
